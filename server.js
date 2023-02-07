@@ -14,10 +14,7 @@ const port = process.env.PORT || 5000
 
 // middleware
 app.use(
-    cors({
-        origin: ["http://localhost:5000", "https://workout-reg.onrender.com"
-        ]
-    })
+    cors()
 )
 app.use(express.json())
 
